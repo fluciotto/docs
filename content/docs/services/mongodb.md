@@ -28,14 +28,14 @@ Docker will expose the following env vars, which you can use to
 connect to mongo from within your application.
 
 ```
-MONGO_ENV_MONGO_MAJOR
-MONGO_PORT
-MONGO_ENV_MONGO_VERSION
-MONGO_PORT_27017_TCP
-MONGO_PORT_27017_TCP_PROTO
-MONGO_PORT_27017_TCP_ADDR
-MONGO_NAME
-MONGO_PORT_27017_TCP_PORT
+MONGO_ENV_MONGO_MAJOR='3.0'
+MONGO_PORT='tcp://172.17.184.188:27017'
+MONGO_ENV_MONGO_VERSION='3.0.7'
+MONGO_PORT_27017_TCP='tcp://172.17.184.188:27017'
+MONGO_PORT_27017_TCP_PROTO='tcp'
+MONGO_PORT_27017_TCP_ADDR='172.17.184.188'
+MONGO_NAME='/wercker-pipeline-xxxxxxxxxxxxxxxxxxxxxxxx/mongo',
+MONGO_PORT_27017_TCP_PORT='27017'
 ```
 
 To learn about how to find out the IP address of a service container you should
